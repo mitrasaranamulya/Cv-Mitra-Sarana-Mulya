@@ -1,0 +1,42 @@
+
+/* styles.css - CV. Mitra Sarana Mulya
+   Theme: Blue & Elegant Black
+*/
+:root{
+  --blue:#0b63d6;
+  --dark:#0b0b0b;
+  --muted:#6b7280;
+  --card-bg:#0f1724;
+  --glass: rgba(255,255,255,0.03);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#020617 0%, #06102a 100%);color:#e6eef8;line-height:1.5}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--blue),#06253a);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;box-shadow:0 6px 18px rgba(11,99,214,0.18)}
+.nav a{color:#cbd8ee;text-decoration:none;margin-left:16px}
+.hero{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center;margin-top:28px}
+.card{background:var(--glass);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+h1{margin:0;font-size:28px;color:white}
+.lead{color:var(--muted);margin-top:8px}
+.cta{display:inline-block;margin-top:12px;padding:12px 18px;border-radius:10px;background:var(--blue);color:white;text-decoration:none;font-weight:600}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:20px}
+.feature{padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.02)}
+.footer{margin-top:34px;padding:18px 0;color:var(--muted);font-size:14px;border-top:1px solid rgba(255,255,255,0.02)}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+.product{background:var(--card-bg);border-radius:10px;padding:12px;border:1px solid rgba(255,255,255,0.03);display:flex;flex-direction:column;gap:12px}
+.placeholder{height:140px;border-radius:8px;background:linear-gradient(135deg,#0b63d6, #06253a);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.04);font-size:13px}
+.row{display:flex;gap:12px;align-items:center}
+.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form input,.form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+.form button{padding:12px 14px;border-radius:10px;border:0;background:var(--blue);color:white;font-weight:600}
+.whatsapp-float{position:fixed;right:18px;bottom:18px;background:linear-gradient(135deg,#25D366,#128C7E);padding:12px;border-radius:999px;box-shadow:0 8px 30px rgba(18,140,126,0.25);text-decoration:none;color:white;font-weight:700}
+.header .nav a:hover{color:white}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr; padding-bottom:10px}
+  .contact-box{grid-template-columns:1fr}
+  .header{flex-direction:column;align-items:flex-start;gap:12px}
+}
